@@ -4,7 +4,7 @@ int main()
 {
   int price, result, count = 0;
   scanf("%d", &price);
-  result = 1000 - price;
+  result = 1000 - price; // 거스름돈
   while (1)
   {
     if (result == 0)
