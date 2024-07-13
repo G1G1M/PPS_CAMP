@@ -30,7 +30,7 @@ int main()
   }
 
   max = cnt[0];
-  for (i = 1; i < 26; i++)
+  for (i = 1; i < 26; i++) // 가장 많이 나온 단어 출력
   {
     if (max < cnt[i])
     {
@@ -39,7 +39,7 @@ int main()
     }
   }
 
-  for (i = 0; i < 26; i++)
+  for (i = 0; i < 26; i++) // 많이 나온 단어가 여러개일 경우
   {
     if (max == cnt[i])
       result++;
@@ -48,7 +48,7 @@ int main()
   if (result > 1)
     printf("?\n");
   else
-    printf("%c", select + 'A');
+    printf("%c\n", select + 'A');
 
   return 0;
 }
